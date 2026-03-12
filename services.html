@@ -26,294 +26,193 @@
 
 <body class="rs-smoother-yes rtl">
 
-    <!-- Header area start -->
     <header>
-        <div class="rs-header-area rs-header-one rs-sticky-header" id="rs-sticky-header">
+
+        <div class="rs-header-area rs-header-five has-theme-yellow">
             <div class="container-fluid g-0">
+
                 <div class="rs-header-inner">
+
+                    <!-- Logo -->
                     <div class="rs-header-left">
-                        <div class="rs-header-logo-wrapper">
-                            <div class="rs-header-logo">
-                                <a href="index.html">
-                                <img src="assets/images/logo/logo22.png" alt="image" style="width:140px; height:auto;">
-                                </a>
-                            </div>
+                        <div class="rs-header-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo22.png" class="site-logo">
+                            </a>
                         </div>
                     </div>
-                    <div class="rs-header-menu">
-                        <div class="rs-theme-social has-transparent has-orange">
-                            <a href="#"><i class="ri-twitter-x-line"></i></a>
-                            <a href="#"><i class="ri-facebook-fill"></i></a>
-                            <a href="#"><i class="ri-linkedin-fill"></i></a>
-                            <a href="#"><i class="ri-instagram-line"></i></a>
-                        </div>
-                        <nav id="mobile-menu" class="main-menu">
+
+                    <!-- Menu -->
+                    <div class="rs-header-menu" id="mainMenu">
+                        <nav class="main-menu">
                             <ul class="multipage-menu">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us 01</a> </li>
+                                <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
+
+                    <!-- Right Section -->
                     <div class="rs-header-right">
-                        <!-- search area start -->
-                        <div class="rs-header-search-wrapper">
-                            <div class="rs-header-search-icon">
-                                <i class="ri-close-fill has-close"></i>
-                                <i class="ri-search-line has-search"></i>
-                            </div>
-                            <form class="rs-header-search-inner rs-stickys-form" action="#">
-                                <div class="rs-header-search">
-                                    <input type="text" placeholder="Searching...">
-                                    <button type="submit"><i class="ri-search-line"></i></button>
+
+                        <!-- Donate Button -->
+                        <a class="blink-btn" href="#donate-seva">Donate Now</a>
+
+                        <!-- Hamburger / Close Toggle -->
+                        <div class="hamburger" onclick="toggleMenu()">
+
+                            <!-- Hamburger Icon -->
+                            <span id="menu-open">☰</span>
+
+                            <!-- Custom Close Icon -->
+                            <div id="menu-close" style="display:none;">
+                                <div class="offcanvas-close">
+                                    <button class="offcanvas-close-icon animation--flip">
+                                        <span class="offcanvas-m-lines">
+                                            <span class="offcanvas-m-line line--1"></span>
+                                            <span class="offcanvas-m-line line--2"></span>
+                                            <span class="offcanvas-m-line line--3"></span>
+                                        </span>
+                                    </button>
                                 </div>
-                            </form>
-                        </div>
-                        <!-- search area end -->
-                        <div class="rs-header-btn">
-                            <a class="rs-btn has-theme-orange has-icon has-bg" href="contact.html">Donate Now
-                                <span class="icon-box">
-                                    <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                        <path
-                                            d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                        </path>
-                                    </svg>
-                                    <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                        <path
-                                            d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="rs-header-hamburger">
-                            <div class="sidebar-toggle">
-                                <a class="bar-icon" href="javascript:void(0)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
-                                        fill="none">
-                                        <path
-                                            d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z"
-                                            fill="#616161"></path>
-                                    </svg>
-                                </a>
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="rs-header-area rs-header-one">
-            <div class="container-fluid g-0">
-                <div class="rs-header-inner">
-                    <div class="rs-header-left">
-                        <div class="rs-header-logo-wrapper">
-                            <div class="rs-header-logo">
-                                <a href="index.html">
-                                <img src="assets/images/logo/logo22.png" alt="image" style="width:140px; height:auto;">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rs-header-menu">
 
-                        <nav id="mobile-menu-two" class="main-menu">
-
-                            <ul class="multipage-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a> </li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-
-                        </nav>
-                    </div>
-                    <div class="rs-header-right">
-                        <!-- search area start -->
-                        <div class="rs-header-search-wrapper">
-                            <div class="rs-header-search-icon">
-                                <i class="ri-close-fill has-close"></i>
-                                <i class="ri-search-line has-search"></i>
-                            </div>
-                            <form class="rs-header-search-inner rs-stickys-form" action="#">
-                                <div class="rs-header-search">
-                                    <input type="text" placeholder="Searching...">
-                                    <button type="submit"><i class="ri-search-line"></i></button>
-                                </div>
-                            </form>
-                        </div>
-                        <!-- search area end -->
-                        <div class="rs-header-btn">
-                            <a class="rs-btn has-theme-orange has-icon has-bg" href="contact.html">Donate Now
-                                <span class="icon-box">
-                                    <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                        <path
-                                            d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                        </path>
-                                    </svg>
-                                    <svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                        <path
-                                            d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                        </path>
-                                    </svg>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="rs-header-hamburger">
-                            <div class="sidebar-toggle">
-                                <a class="bar-icon" href="javascript:void(0)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
-                                        fill="none">
-                                        <path
-                                            d="M8.55566 11H1.55566C1.29045 11 1.03609 11.1054 0.848557 11.2929C0.661021 11.4804 0.555664 11.7348 0.555664 12V19C0.555664 19.2652 0.661021 19.5196 0.848557 19.7071C1.03609 19.8946 1.29045 20 1.55566 20H8.55566C8.82088 20 9.07523 19.8946 9.26277 19.7071C9.45031 19.5196 9.55566 19.2652 9.55566 19V12C9.55566 11.7348 9.45031 11.4804 9.26277 11.2929C9.07523 11.1054 8.82088 11 8.55566 11ZM7.55566 18H2.55566V13H7.55566V18ZM19.5557 0H12.5557C12.2904 0 12.0361 0.105357 11.8486 0.292893C11.661 0.48043 11.5557 0.734784 11.5557 1V8C11.5557 8.26522 11.661 8.51957 11.8486 8.70711C12.0361 8.89464 12.2904 9 12.5557 9H19.5557C19.8209 9 20.0752 8.89464 20.2628 8.70711C20.4503 8.51957 20.5557 8.26522 20.5557 8V1C20.5557 0.734784 20.4503 0.48043 20.2628 0.292893C20.0752 0.105357 19.8209 0 19.5557 0ZM18.5557 7H13.5557V2H18.5557V7ZM19.5557 11H12.5557C12.2904 11 12.0361 11.1054 11.8486 11.2929C11.661 11.4804 11.5557 11.7348 11.5557 12V19C11.5557 19.2652 11.661 19.5196 11.8486 19.7071C12.0361 19.8946 12.2904 20 12.5557 20H19.5557C19.8209 20 20.0752 19.8946 20.2628 19.7071C20.4503 19.5196 20.5557 19.2652 20.5557 19V12C20.5557 11.7348 20.4503 11.4804 20.2628 11.2929C20.0752 11.1054 19.8209 11 19.5557 11ZM18.5557 18H13.5557V13H18.5557V18ZM8.55566 0H1.55566C1.29045 0 1.03609 0.105357 0.848557 0.292893C0.661021 0.48043 0.555664 0.734784 0.555664 1V8C0.555664 8.26522 0.661021 8.51957 0.848557 8.70711C1.03609 8.89464 1.29045 9 1.55566 9H8.55566C8.82088 9 9.07523 8.89464 9.26277 8.70711C9.45031 8.51957 9.55566 8.26522 9.55566 8V1C9.55566 0.734784 9.45031 0.48043 9.26277 0.292893C9.07523 0.105357 8.82088 0 8.55566 0ZM7.55566 7H2.55566V2H7.55566V7Z"
-                                            fill="#616161"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
-    <!-- Header area end -->
 
-    <!-- Offcanvas area start -->
-    <div class="fix">
-        <div class="offcanvas-area" data-lenis-prevent>
-            <div class="offcanvas-wrapper">
-                <div class="offcanvas-content">
-                    <div class="offcanvas-top d-flex justify-content-between align-items-center mb-20">
-                        <div class="offcanvas-logo">
-                            <a class="logo-black" href="index.html"><img src="assets/images/logo/logo-yellow.jpg"
-                                    alt="logo"></a>
-                        </div>
-                        <div class="offcanvas-close">
-                            <button class="offcanvas-close-icon animation--flip">
-                                <span class="offcanvas-m-lines">
-                                    <span class="offcanvas-m-line line--1"></span><span
-                                        class="offcanvas-m-line line--2"></span><span
-                                        class="offcanvas-m-line line--3"></span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="offcanvas-about mb-30 d-none d-sm-block">
-                        <p> Industrie is a modern factory website. specifically designed for who need construction,
-                            firms, oil, architecture and any other small business.
-                        </p>
-                    </div>
-                    <div class="offcanvas-gallery d-none d-sm-block">
-                        <div class="offcanvas-gallery-thumb-wrapper">
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-01.png">
-                                    <img src="assets/images/gallery/gallery-thumb-01.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-02.png">
-                                    <img src="assets/images/gallery/gallery-thumb-02.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-03.png">
-                                    <img src="assets/images/gallery/gallery-thumb-03.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-04.png">
-                                    <img src="assets/images/gallery/gallery-thumb-04.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-05.png">
-                                    <img src="assets/images/gallery/gallery-thumb-05.png" alt="image">
-                                </a>
-                            </div>
-                            <div class="offcanvas-popup-thumb">
-                                <a class="popup-image" href="assets/images/gallery/gallery-thumb-01.png">
-                                    <img src="assets/images/gallery/gallery-thumb-01.png" alt="image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mobile-menu">
-                        <div class="rs-offcanvas-menu mb-25">
-                            <nav></nav>
-                        </div>
-                    </div>
-                    <div class="offcanvas-contact mb-30">
-                        <h4 class="offcanvas-title-meta">Contact Info</h4>
-                        <ul>
-                            <li class="d-flex align-items-center gap-15">
-                                <div class="offcanvas-contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18"
-                                        fill="none">
-                                        <path
-                                            d="M11.8768 9.68475C11.3059 10.835 10.5331 11.9818 9.74128 13.0109C8.95198 14.0368 8.15999 14.9249 7.5643 15.5572C7.48514 15.6412 7.40956 15.7206 7.33802 15.7951C7.26648 15.7206 7.1909 15.6412 7.11174 15.5572C6.51605 14.9249 5.72406 14.0368 4.93476 13.0109C4.14299 11.9818 3.37019 10.835 2.79925 9.68475C2.22242 8.52266 1.89032 7.43373 1.89032 6.5C1.89032 3.50846 4.32934 1.08333 7.33802 1.08333C10.3467 1.08333 12.7857 3.50846 12.7857 6.5C12.7857 7.43373 12.4536 8.52266 11.8768 9.68475ZM7.33802 17.3333C7.33802 17.3333 13.8753 11.1732 13.8753 6.5C13.8753 2.91015 10.9484 0 7.33802 0C3.7276 0 0.800781 2.91015 0.800781 6.5C0.800781 11.1732 7.33802 17.3333 7.33802 17.3333Z"
-                                            fill="#6D6D6D"></path>
-                                        <path
-                                            d="M7.33802 8.66667C6.13455 8.66667 5.15894 7.69662 5.15894 6.5C5.15894 5.30338 6.13455 4.33333 7.33802 4.33333C8.54149 4.33333 9.5171 5.30338 9.5171 6.5C9.5171 7.69662 8.54149 8.66667 7.33802 8.66667ZM7.33802 9.75C9.14323 9.75 10.6066 8.29492 10.6066 6.5C10.6066 4.70507 9.14323 3.25 7.33802 3.25C5.53281 3.25 4.0694 4.70507 4.0694 6.5C4.0694 8.29492 5.53281 9.75 7.33802 9.75Z"
-                                            fill="#6D6D6D"></path>
-                                    </svg>
-                                </div>
-                                <div class="offcanvas-contact-text">
-                                    <a href="#"> 2096 New Market, New Road <br>
-                                        North Carolina, USA </a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center gap-15">
-                                <div class="offcanvas-contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="none">
-                                        <path
-                                            d="M3.65387 1.32849C3.40343 1.00649 2.92745 0.976861 2.639 1.26531L1.60508 2.29923C1.1216 2.78271 0.94387 3.46766 1.1551 4.06847C2.00338 6.48124 3.39215 8.74671 5.32272 10.6773C7.25329 12.6078 9.51876 13.9966 11.9315 14.8449C12.5323 15.0561 13.2173 14.8784 13.7008 14.3949L14.7347 13.361C15.0231 13.0726 14.9935 12.5966 14.6715 12.3461L12.3653 10.5524C12.2008 10.4245 11.9866 10.3793 11.7845 10.4298L9.59541 10.9771C9.00082 11.1257 8.37183 10.9515 7.93845 10.5181L5.48187 8.06155C5.04849 7.62817 4.87427 6.99919 5.02292 6.40459L5.57019 4.21553C5.62073 4.01336 5.57552 3.79918 5.44758 3.63468L3.65387 1.32849ZM1.88477 0.511076C2.62689 -0.231039 3.8515 -0.154797 4.49583 0.673634L6.28954 2.97983C6.6187 3.40304 6.73502 3.95409 6.60498 4.47423L6.05772 6.66329C5.99994 6.8944 6.06766 7.13888 6.2361 7.30732L8.69268 9.7639C8.86113 9.93235 9.1056 10.0001 9.33671 9.94229L11.5258 9.39502C12.0459 9.26499 12.597 9.3813 13.0202 9.71047L15.3264 11.5042C16.1548 12.1485 16.231 13.3731 15.4889 14.1152L14.455 15.1492C13.7153 15.8889 12.6089 16.2137 11.5778 15.8512C9.01754 14.9511 6.61438 13.4774 4.56849 11.4315C2.5226 9.38562 1.04895 6.98246 0.148838 4.42225C-0.213682 3.39112 0.11113 2.28472 0.85085 1.545L1.88477 0.511076Z"
-                                            fill="#6D6D6D"></path>
-                                        <path
-                                            d="M11 0.5C11 0.223858 11.2239 0 11.5 0H15.5C15.7761 0 16 0.223858 16 0.5V4.5C16 4.77614 15.7761 5 15.5 5C15.2239 5 15 4.77614 15 4.5V1.70711L10.8536 5.85355C10.6583 6.04882 10.3417 6.04882 10.1464 5.85355C9.95118 5.65829 9.95118 5.34171 10.1464 5.14645L14.2929 1H11.5C11.2239 1 11 0.776142 11 0.5Z"
-                                            fill="#6D6D6D"></path>
-                                    </svg>
-                                </div>
-                                <div class="offcanvas-contact-text">
-                                    <a href="tel:+12346691234"> +123-4669-1234 </a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center gap-15">
-                                <div class="offcanvas-contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="none">
-                                        <path
-                                            d="M2 2C0.895431 2 0 2.89543 0 4V12L2.58386e-05 12.0103C0.00555998 13.1101 0.898859 14 2 14H7.5C7.77614 14 8 13.7761 8 13.5C8 13.2239 7.77614 13 7.5 13H2C1.53715 13 1.14774 12.6855 1.03376 12.2586L6.67417 8.7876L8 9.5831L15 5.3831V8.5C15 8.77614 15.2239 9 15.5 9C15.7761 9 16 8.77614 16 8.5V4C16 2.89543 15.1046 2 14 2H2ZM5.70808 8.20794L1 11.1052V5.3831L5.70808 8.20794ZM1 4.2169V4C1 3.44772 1.44772 3 2 3H14C14.5523 3 15 3.44772 15 4V4.2169L8 8.4169L1 4.2169Z"
-                                            fill="#6D6D6D"></path>
-                                        <path
-                                            d="M14.2467 14.2686C15.2567 14.2686 15.8339 13.4116 15.8339 12.2442V12.0344C15.8339 10.4297 14.6402 9 12.5197 9H12.4847C10.421 9 9 10.3598 9 12.4322V12.6465C9 14.8195 10.4385 16 12.3579 16H12.4016C12.9963 16 13.4204 15.9257 13.639 15.8251V15.0949C13.3941 15.2042 12.9656 15.2742 12.4585 15.2742H12.4147C11.0812 15.2742 9.84385 14.4872 9.84385 12.6202V12.4628C9.84385 10.8057 10.9019 9.73891 12.4847 9.73891H12.524C14.0587 9.73891 15.0075 10.7883 15.0075 12.065V12.183C15.0075 13.158 14.6839 13.5734 14.3691 13.5734C14.1374 13.5734 13.9582 13.4247 13.9582 13.1537V10.9631H13.0531V11.5315H13.0225C12.9394 11.2342 12.6552 10.9019 12.0693 10.9019C11.2911 10.9019 10.8101 11.4572 10.8101 12.3011V12.8301C10.8101 13.722 11.2998 14.2642 12.0693 14.2642C12.5415 14.2642 12.9656 14.0369 13.0837 13.6215H13.1274C13.2455 14.0412 13.7439 14.2686 14.2467 14.2686ZM11.7939 12.6814V12.4541C11.7939 11.9076 12.0212 11.6627 12.3666 11.6627C12.664 11.6627 12.9394 11.8551 12.9394 12.371V12.7383C12.9394 13.3111 12.6858 13.4816 12.3754 13.4816C12.0212 13.4816 11.7939 13.2673 11.7939 12.6814Z"
-                                            fill="#6D6D6D"></path>
-                                    </svg>
-                                </div>
-                                <div class="offcanvas-contact-text">
-                                    <a href="mailto:info@gmail.com">info@gmail.com</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="offcanvas-social">
-                        <h4 class="offcanvas-title-meta">Subscribe & Follow</h4>
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="offcanvas-overlay"></div>
-    <div class="offcanvas-overlay-white"></div>
-    <!-- Offcanvas area start -->
+    <style>
+        /* Header Layout */
 
-    <!-- Body main wrapper start -->
+        .rs-header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+        }
+
+        /* Left Section */
+
+        .rs-header-left {
+            flex: 0 0 auto;
+        }
+
+        /* Logo */
+
+        .site-logo {
+            width: 130px;
+            height: 100px;
+            display: block;
+        }
+
+        /* Menu Center */
+
+        .rs-header-menu {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Right Section */
+
+        .rs-header-right {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* Donate Button */
+
+        .blink-btn {
+            background: red;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-decoration: none;
+            animation: blinkDonate 1s infinite alternate;
+        }
+
+        @keyframes blinkDonate {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0.5;
+            }
+        }
+
+        /* Hamburger */
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 28px;
+        }
+
+        /* Mobile */
+
+        @media(max-width:768px) {
+
+            .rs-header-menu {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: #fff;
+                padding: 20px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .multipage-menu {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+        }
+    </style>
+
+
+    <script>
+
+        function toggleMenu() {
+
+            let menu = document.getElementById("mainMenu");
+            let openIcon = document.getElementById("menu-open");
+            let closeIcon = document.getElementById("menu-close");
+
+            if (menu.style.display === "block") {
+
+                menu.style.display = "none";
+                openIcon.style.display = "inline";
+                closeIcon.style.display = "none";
+
+            } else {
+
+                menu.style.display = "block";
+                openIcon.style.display = "none";
+                closeIcon.style.display = "block";
+
+            }
+
+        }
+
+    </script>
     <main>
 
         <!-- breadcrumb area start -->
@@ -347,7 +246,10 @@
 
         <!-- category area start -->
         <section class="rs-category-area  rs-category-one has-theme-orange">
-            <div class="rs-category-bg-thumb" data-background="assets/images/bg/category-bg-02.png"></div>
+            <div class="rs-category-bg-thumb" >
+                <img src="assets/images/bg/category-bg-02.png">
+            </div>
+                               
             <div class="container">
                 <div class="row g-5">
                     <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-8 col-sm-10">
@@ -363,40 +265,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="rs-category-item">
                             <div class="rs-category-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 500 500">
-                                    <g>
-                                        <path
-                                            d="m274.648 446.616h-228.847c-3.023 0-5.737-1.855-6.831-4.672s-.35-6.017 1.878-8.056l54.999-50.424c1.351-1.243 3.12-1.93 4.952-1.93h3.183l19.324-105.858h-27.184c-4.048 0-7.329-3.28-7.329-7.328v-34.433c0-4.048 3.281-7.329 7.329-7.329h128.205c4.048 0 7.329 3.281 7.329 7.329v34.433c0 4.048-3.281 7.328-7.329 7.328h-27.179l19.324 105.858h3.178c1.832 0 3.601.687 4.953 1.93l29.87 27.385c2.983 2.731 3.183 7.369.447 10.352-2.731 2.977-7.369 3.189-10.352.447l-27.768-25.456h-6.441c-3.538 0-6.573-2.531-7.208-6.012l-21.997-120.516c-.389-2.141.189-4.339 1.581-6.012 1.391-1.666 3.452-2.634 5.628-2.634h28.639v-19.776h-113.551v19.776h28.645c2.176 0 4.237.968 5.628 2.634 1.391 1.672 1.97 3.87 1.58 6.012l-22.003 120.516c-.636 3.481-3.67 6.012-7.208 6.012h-6.441l-39.013 35.767h210.01c4.048 0 7.329 3.28 7.329 7.328-.001 4.048-3.282 7.329-7.33 7.329z">
-                                        </path>
-                                        <path
-                                            d="m152.696 275.676h-20.6c-4.048 0-7.329-3.28-7.329-7.328s3.281-7.329 7.329-7.329h20.6c4.048 0 7.329 3.28 7.329 7.329-.001 4.047-3.281 7.328-7.329 7.328z">
-                                        </path>
-                                        <path
-                                            d="m179.44 396.192h-69.347c-4.048 0-7.329-3.28-7.329-7.329 0-4.048 3.281-7.329 7.329-7.329h69.347c4.048 0 7.329 3.281 7.329 7.329-.001 4.048-3.282 7.329-7.329 7.329z">
-                                        </path>
-                                        <path
-                                            d="m454.199 446.616h-228.847c-3.023 0-5.737-1.855-6.83-4.672s-.349-6.017 1.878-8.056l54.999-50.424c1.352-1.243 3.121-1.93 4.953-1.93h3.183l19.323-105.858h-27.184c-4.048 0-7.329-3.28-7.329-7.328v-34.433c0-4.048 3.28-7.329 7.329-7.329h128.205c4.048 0 7.329 3.281 7.329 7.329v34.433c0 4.048-3.28 7.328-7.329 7.328h-27.184l19.323 105.858h3.183c1.833 0 3.602.687 4.953 1.93l54.999 50.424c2.227 2.039 2.972 5.239 1.878 8.056-1.095 2.817-3.808 4.672-6.832 4.672zm-210.01-14.657h191.174l-39.014-35.767h-6.44c-3.538 0-6.573-2.531-7.208-6.012l-22.003-120.516c-.39-2.141.188-4.339 1.58-6.012 1.391-1.666 3.453-2.634 5.629-2.634h28.644v-19.776h-113.549v19.776h28.645c2.176 0 4.237.968 5.628 2.634 1.392 1.672 1.97 3.87 1.58 6.012l-22.003 120.516c-.635 3.481-3.67 6.012-7.208 6.012h-6.441z">
-                                        </path>
-                                        <path
-                                            d="m332.241 275.676h-20.595c-4.048 0-7.329-3.28-7.329-7.328s3.28-7.329 7.329-7.329h20.595c4.048 0 7.328 3.28 7.328 7.329 0 4.047-3.28 7.328-7.328 7.328z">
-                                        </path>
-                                        <path
-                                            d="m358.99 396.192h-69.346c-4.048 0-7.329-3.28-7.329-7.329 0-4.048 3.28-7.329 7.329-7.329h69.346c4.048 0 7.329 3.281 7.329 7.329s-3.281 7.329-7.329 7.329z">
-                                        </path>
-                                        <path
-                                            d="m345.57 241.243h-192.983c-3.024 0-5.737-1.855-6.831-4.672-1.093-2.817-.35-6.017 1.878-8.056l46.376-42.523c1.352-1.243 3.121-1.93 4.953-1.93h1.724l15.877-86.981h-21.545c-4.048 0-7.328-3.281-7.328-7.329v-29.04c0-4.047 3.28-7.329 7.328-7.329h108.12c4.048 0 7.329 3.281 7.329 7.329v29.04c0 4.048-3.28 7.329-7.329 7.329h-21.55l15.877 86.981h1.723c1.832 0 3.602.687 4.953 1.93l46.382 42.523c2.228 2.039 2.972 5.239 1.878 8.056-1.095 2.817-3.809 4.672-6.832 4.672zm-174.146-14.657h155.309l-30.396-27.865h-4.981c-3.539 0-6.573-2.531-7.209-6.012l-18.556-101.64c-.39-2.141.188-4.339 1.58-6.012 1.391-1.666 3.453-2.633 5.629-2.633h23.011v-14.382h-93.463v14.382h23.005c2.176 0 4.237.968 5.628 2.633 1.391 1.672 1.97 3.87 1.58 6.012l-18.55 101.639c-.636 3.481-3.67 6.012-7.209 6.012h-4.987z">
-                                        </path>
-                                        <path
-                                            d="m242.729 97.082h-17.377c-4.048 0-7.329-3.281-7.329-7.329s3.281-7.329 7.329-7.329h17.377c4.048 0 7.329 3.28 7.329 7.329-.001 4.047-3.281 7.329-7.329 7.329z">
-                                        </path>
-                                        <path
-                                            d="m265.281 198.72h-58.48c-4.048 0-7.329-3.281-7.329-7.329s3.28-7.329 7.329-7.329h58.48c4.048 0 7.329 3.281 7.329 7.329s-3.281 7.329-7.329 7.329z">
-                                        </path>
-                                        <path
-                                            d="m467.671 446.616h-435.342c-4.048 0-7.329-3.28-7.329-7.329 0-4.048 3.281-7.328 7.329-7.328h435.343c4.048 0 7.329 3.28 7.329 7.328-.001 4.048-3.281 7.329-7.33 7.329z">
-                                        </path>
-                                    </g>
-                                </svg>
+                                <img src="assets/images/bg/gift3.png">
                             </div>
                             <div class="rs-category-content">
                                 <h5 class="rs-category-title">Festival Celebration Support</h5>
@@ -408,49 +277,8 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="rs-category-item">
                             <div class="rs-category-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" viewBox="0 0 500 500">
-                                    <g>
-                                        <path
-                                            d="m250.015 431.812c-1.224 0-2.441-.285-3.56-.858-43.353-22.264-145.305-92.798-155.707-266.514-.176-2.934 1.321-5.722 3.865-7.2l151.47-88.003c2.423-1.399 5.404-1.399 7.827 0l151.476 88.003c2.544 1.479 4.041 4.266 3.865 7.206-10.408 173.746-112.335 244.256-155.676 266.507-1.119.573-2.336.859-3.56.859zm-143.399-263.525c11.138 157.654 101.093 224.183 143.399 246.934 42.299-22.745 132.225-89.249 143.37-246.934l-143.388-83.304z">
-                                        </path>
-                                        <path
-                                            d="m249.997 475c-.901 0-1.802-.158-2.661-.469-1.929-.7-192.491-72.974-195.717-330.912-.037-2.812 1.449-5.423 3.877-6.835l190.587-110.734c2.423-1.399 5.404-1.399 7.827 0l190.593 110.734c2.429 1.412 3.913 4.023 3.878 6.835-3.226 257.938-193.794 330.212-195.724 330.912-.859.311-1.759.469-2.66.469zm-182.718-327.042c4.875 226.709 160.289 301.273 182.718 310.846 22.427-9.573 177.847-84.137 182.723-310.846l-182.723-106.163z">
-                                        </path>
-                                        <path
-                                            d="m204.665 318.795h-61.721c-4.303 0-8.381-2.1-11.199-5.77-3.518-4.577-4.717-11.107-3.134-17.041l9.488-35.538c1.96-7.31 7.718-12.215 14.334-12.215h42.744c6.615 0 12.374 4.905 14.327 12.203l9.495 35.55c1.582 5.934.383 12.464-3.134 17.041-2.818 3.67-6.896 5.77-11.2 5.77zm-60.759-15.581h59.798c.31-.626.603-1.838.237-3.201 0-.007-9.488-35.55-9.488-35.55-.073-.274-.159-.487-.238-.652h-40.82c-.079.164-.164.384-.244.664l-9.483 35.531c-.364 1.37-.072 2.582.238 3.208z">
-                                        </path>
-                                        <path
-                                            d="m280.86 318.795h-61.721c-4.303 0-8.38-2.1-11.199-5.77-3.518-4.577-4.717-11.107-3.134-17.041l9.488-35.538c1.96-7.31 7.717-12.215 14.334-12.215h42.744c6.615 0 12.373 4.905 14.327 12.203l9.495 35.556c1.583 5.928.384 12.458-3.135 17.035-2.818 3.67-6.895 5.77-11.199 5.77zm-60.759-15.581h59.798c.31-.626.602-1.838.237-3.201 0-.007-9.488-35.55-9.488-35.55-.073-.274-.159-.487-.238-.652h-40.821c-.079.164-.165.384-.243.664l-9.483 35.531c-.365 1.37-.073 2.582.238 3.208z">
-                                        </path>
-                                        <path
-                                            d="m242.766 263.811h-61.727c-4.297 0-8.375-2.1-11.193-5.757-3.519-4.583-4.724-11.113-3.141-17.042l9.495-35.55c1.947-7.303 7.711-12.215 14.333-12.215h42.738c6.622 0 12.385 4.912 14.334 12.215l9.494 35.544c1.582 5.935.378 12.465-3.14 17.048-2.818 3.657-6.896 5.757-11.193 5.757zm-60.766-15.58h59.804c.304-.627.602-1.838.238-3.208l-9.495-35.544c-.072-.274-.158-.487-.237-.651h-40.815c-.079.164-.165.377-.238.651l-9.494 35.544c-.365 1.364-.067 2.581.237 3.208z">
-                                        </path>
-                                        <path
-                                            d="m318.954 263.811h-61.721c-4.304 0-8.381-2.1-11.199-5.769-3.518-4.577-4.717-11.107-3.134-17.042l9.495-35.538c1.947-7.303 7.704-12.215 14.327-12.215h42.744c6.621 0 12.385 4.912 14.333 12.215l9.489 35.538c1.582 5.935.383 12.465-3.134 17.042-2.813 3.669-6.896 5.769-11.2 5.769zm-60.759-15.58h59.804c.304-.627.597-1.838.231-3.202 0-.006-9.488-35.55-9.488-35.55-.073-.274-.159-.487-.238-.651h-40.814c-.079.164-.164.377-.238.651l-9.495 35.544c-.365 1.37-.072 2.581.238 3.208z">
-                                        </path>
-                                        <path
-                                            d="m280.86 208.828h-61.721c-4.303 0-8.38-2.1-11.199-5.77-3.518-4.577-4.717-11.107-3.134-17.042l9.488-35.538c1.96-7.316 7.723-12.221 14.334-12.221h42.744c6.609 0 12.373 4.905 14.327 12.209l9.495 35.556c1.583 5.928.384 12.458-3.135 17.035-2.818 3.671-6.895 5.771-11.199 5.771zm-60.759-15.581h59.798c.31-.626.602-1.838.237-3.201 0-.007-9.488-35.55-9.488-35.55-.073-.274-.159-.493-.244-.658h-40.809c-.085.164-.171.383-.249.67l-9.483 35.531c-.365 1.369-.073 2.581.238 3.208z">
-                                        </path>
-                                        <path
-                                            d="m357.055 318.795h-61.721c-4.303 0-8.387-2.1-11.199-5.77-3.518-4.577-4.717-11.107-3.134-17.041l9.489-35.538c1.947-7.304 7.711-12.215 14.333-12.215h42.744c6.622 0 12.38 4.911 14.328 12.215l9.494 35.538c1.583 5.934.384 12.464-3.134 17.041-2.82 3.67-6.897 5.77-11.2 5.77zm-60.766-15.581h59.804c.311-.626.602-1.838.238-3.201 0-.007-9.495-35.55-9.495-35.55-.073-.274-.159-.487-.237-.652h-40.815c-.079.164-.164.378-.238.652l-9.488 35.543c-.366 1.37-.073 2.582.231 3.208z">
-                                        </path>
-                                        <path
-                                            d="m361.078 318.795h-223.233c-4.303 0-7.791-3.487-7.791-7.791 0-4.303 3.487-7.791 7.791-7.791h223.234c4.303 0 7.79 3.488 7.79 7.791-.001 4.304-3.488 7.791-7.791 7.791z">
-                                        </path>
-                                        <path
-                                            d="m261.384 389.95c-2.988 0-5.976-.949-8.587-2.842l-2.799-2.039-2.794 2.033c-5.222 3.797-11.953 3.791-17.176.006-5.221-3.792-7.309-10.207-5.319-16.342l1.077-3.287-2.805-2.038c-5.216-3.785-7.297-10.201-5.301-16.335 1.991-6.136 7.444-10.098 13.896-10.098h3.456l1.071-3.281c1.997-6.141 7.45-10.103 13.896-10.103 6.451 0 11.904 3.963 13.901 10.097l1.071 3.287h3.451c6.451 0 11.911 3.968 13.901 10.103 1.991 6.135-.097 12.544-5.313 16.335l-2.793 2.026 1.065 3.293c1.996 6.129-.085 12.544-5.301 16.336-2.614 1.9-5.603 2.843-8.597 2.849zm-11.387-20.699c3.012 0 6.025.937 8.593 2.805l.956.694-.366-1.133c-1.96-6.038.17-12.599 5.301-16.329l.961-.7h-1.18c-6.349 0-11.936-4.054-13.896-10.091l-.365-1.132-.372 1.126c-1.96 6.044-7.547 10.097-13.895 10.097h-1.187l.961.7c5.137 3.725 7.273 10.286 5.307 16.329l-.365 1.126.949-.688c2.572-1.867 5.585-2.804 8.598-2.804z">
-                                        </path>
-                                        <path
-                                            d="m295.285 280.488c-2.489 0-4.943-1.193-6.446-3.409l-11.345-16.676c-2.422-3.56-1.496-8.405 2.058-10.822 3.548-2.422 8.405-1.503 10.821 2.057l11.345 16.677c2.423 3.56 1.497 8.405-2.057 10.821-1.339.914-2.867 1.352-4.376 1.352z">
-                                        </path>
-                                        <path
-                                            d="m204.708 280.488c-1.509 0-3.037-.438-4.376-1.352-3.555-2.416-4.479-7.261-2.057-10.821l11.345-16.677c2.416-3.56 7.273-4.479 10.822-2.057 3.555 2.417 4.479 7.261 2.057 10.822l-11.345 16.676c-1.503 2.216-3.957 3.409-6.446 3.409z">
-                                        </path>
-                                        <path
-                                            d="m249.461 223.362c-4.303 0-7.791-3.487-7.791-7.791v-14.534c0-4.303 3.488-7.791 7.791-7.791s7.791 3.488 7.791 7.791v14.534c0 4.304-3.488 7.791-7.791 7.791z">
-                                        </path>
-                                    </g>
-                                </svg>
+                             <img src="assets/images/bg/gift2.png">
+
                             </div>
                             <div class="rs-category-content">
                                 <h5 class="rs-category-title">The resources to conduct large celebrations</h5>
@@ -462,55 +290,8 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="rs-category-item">
                             <div class="rs-category-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" id="Layer_3" viewBox="0 0 500 500">
-                                    <g>
-                                        <path
-                                            d="m306.845 474.732h-256.403c-2.435 0-4.73-1.138-6.203-3.074-1.474-1.942-1.958-4.456-1.306-6.8l38.314-138.156v-108.46c0-4.303 3.488-7.792 7.792-7.792h179.207c4.303 0 7.792 3.489 7.792 7.792v108.461l38.315 138.156c.651 2.344.167 4.858-1.306 6.8-1.473 1.935-3.767 3.073-6.202 3.073zm-246.154-15.583h235.905l-35.858-129.305c-.188-.676-.283-1.376-.283-2.082v-101.728h-163.623v101.728c0 .707-.094 1.406-.283 2.082z">
-                                        </path>
-                                        <path
-                                            d="m268.247 226.034h-179.206c-7.588 0-13.764-6.173-13.764-13.764v-12.407c0-7.591 6.176-13.77 13.764-13.77h179.207c7.587 0 13.764 6.179 13.764 13.77v12.407c-.001 7.591-6.177 13.764-13.765 13.764zm-177.387-15.584h175.566v-8.772h-175.566z">
-                                        </path>
-                                        <path
-                                            d="m268.317 201.677h-175.484c-4.088 0-7.479-3.159-7.771-7.231-.079-1.077-.136-1.96-.136-2.855 0-14.854 8.498-28.38 21.376-35.07-.465-2.691-.7-5.4-.7-8.121 0-26.596 21.635-48.231 48.228-48.231 6.444 0 12.808 1.309 18.725 3.817 6.039-6.648 14.278-10.757 23.3-11.505 8.617-16.315 25.558-26.492 44.533-25.829 3.735-23.425 24.076-41.383 48.536-41.383 23.12 0 42.813 16.016 47.872 38.066 17.392 5.503 29.512 21.678 29.512 40.353 0 21.313-15.569 38.905-36.202 41.888-8.106 13.277-22.731 21.641-38.424 21.641-3.144 0-6.258-.335-9.292-.98.359 2.411.541 4.895.541 7.433 0 9.046-2.906 17.666-8.401 24.922-1.474 1.942-3.775 3.085-6.213 3.085zm-167.156-15.583h162.962c2.118-3.799 3.224-8.036 3.224-12.425 0-7.257-2.109-13.691-5.868-18.147-.673-.609-1.327-1.242-1.966-1.893-.548-.401-1.05-.889-1.488-1.449-2.609-3.348-1.97-8.23 1.312-10.908.429-.341.758-.56 1.095-.749 3.321-1.887 7.646-1.151 10.045 1.887.727.682 1.427 1.388 2.097 2.131 5.324 4.596 11.992 7.091 19.109 7.091 11.25 0 21.668-6.586 26.539-16.788 1.248-2.612 3.841-4.316 6.736-4.426 14.448-.547 25.768-12.291 25.768-26.73 0-13.002-9.292-24.082-22.094-26.346-3.397-.597-5.993-3.361-6.383-6.788-1.938-16.929-16.263-29.701-33.322-29.701-18.506 0-33.563 15.06-33.563 33.566l.048.823c.043 2.386-1.007 4.656-2.852 6.173-1.844 1.509-4.28 2.093-6.611 1.583-16.303-3.586-32.008 5.272-37.889 20.204-1.242 3.16-4.435 5.181-7.756 4.919-.462-.031-.916-.085-1.37-.147-7.244 0-13.678 3.714-17.379 9.923-1.065 1.79-2.803 3.08-4.824 3.58-2.015.511-4.155.171-5.932-.92-5.141-3.141-11.006-4.803-16.966-4.803-18.001 0-32.645 14.647-32.645 32.647 0 3.47.573 6.946 1.695 10.318.67 2.009.497 4.2-.483 6.076-.98 1.874-2.681 3.269-4.712 3.865-8.316 2.44-14.564 9.24-16.527 17.434z">
-                                        </path>
-                                        <path
-                                            d="m110.804 170.748c-2.913 0-5.705-1.638-7.04-4.438-1.85-3.89-.201-8.54 3.683-10.392 8.622-4.108 18.636-4.924 27.752-2.331 4.14 1.169 6.548 5.479 5.372 9.619-1.178 4.145-5.479 6.574-9.621 5.369-5.491-1.546-11.59-1.065-16.801 1.418-1.082.511-2.223.755-3.345.755z">
-                                        </path>
-                                        <path
-                                            d="m170.883 137.82c-4.072 0-7.5-3.166-7.767-7.287-.049-.773-.076-1.565-.076-2.356 0-19.748 16.071-35.819 35.821-35.819 8.261 0 16.324 2.879 22.7 8.108 3.327 2.728 3.814 7.64 1.087 10.97-2.727 3.324-7.643 3.805-10.967 1.084-3.652-2.995-8.084-4.578-12.82-4.578-11.158 0-20.238 9.077-20.238 20.235 0 .451.015.901.046 1.345.277 4.292-2.976 7.999-7.271 8.28-.17.012-.344.018-.515.018z">
-                                        </path>
-                                        <path
-                                            d="m275.12 163.345c-1.166 0-2.35-.262-3.466-.816-12.979-6.459-22.104-18.841-24.408-33.11-.689-4.249 2.2-8.249 6.45-8.937 4.261-.675 8.248 2.204 8.933 6.453 1.506 9.326 7.475 17.417 15.97 21.641 3.85 1.918 5.421 6.593 3.503 10.446-1.364 2.74-4.118 4.323-6.982 4.323z">
-                                        </path>
-                                        <path
-                                            d="m249.218 93.819c-3.376 0-6.484-2.209-7.479-5.613-1.303-4.468-1.964-9.106-1.964-13.788 0-27.101 22.049-49.15 49.148-49.15s49.147 22.049 49.147 49.15c0 4.243-.545 8.468-1.619 12.558-1.096 4.158-5.379 6.648-9.518 5.552-4.164-1.096-6.647-5.357-5.555-9.521.736-2.788 1.108-5.68 1.108-8.59 0-18.506-15.057-33.566-33.564-33.566-18.506 0-33.563 15.06-33.563 33.566 0 3.208.45 6.374 1.342 9.429 1.205 4.128-1.169 8.456-5.299 9.661-.727.215-1.463.312-2.184.312z">
-                                        </path>
-                                        <path
-                                            d="m323.935 146.056c-6.626 0-13.228-1.57-19.093-4.535-3.838-1.942-5.378-6.629-3.433-10.47 1.945-3.835 6.632-5.375 10.471-3.433 3.743 1.893 7.801 2.855 12.056 2.855 4.304 0 7.792 3.488 7.792 7.791-.001 4.304-3.488 7.792-7.793 7.792z">
-                                        </path>
-                                        <path
-                                            d="m453.27 474.732h-420.478c-4.304 0-7.792-3.488-7.792-7.792 0-4.303 3.488-7.791 7.792-7.791h412.686v-179.35h-177.231c-4.304 0-7.792-3.489-7.792-7.792 0-4.304 3.488-7.792 7.792-7.792h185.023c4.303 0 7.792 3.488 7.792 7.792v194.933c.001 4.304-3.488 7.792-7.792 7.792z">
-                                        </path>
-                                        <path
-                                            d="m467.208 474.732h-13.938c-4.303 0-7.792-3.488-7.792-7.792 0-4.303 3.489-7.791 7.792-7.791h13.938c4.303 0 7.792 3.488 7.792 7.791 0 4.304-3.489 7.792-7.792 7.792z">
-                                        </path>
-                                        <path
-                                            d="m467.208 279.799h-13.938c-4.303 0-7.792-3.489-7.792-7.792 0-4.304 3.489-7.792 7.792-7.792h6.145v-7.184h-191.168c-4.304 0-7.792-3.488-7.792-7.791 0-4.304 3.488-7.792 7.792-7.792h198.96c4.303 0 7.792 3.488 7.792 7.792v22.767c.001 4.303-3.488 7.792-7.791 7.792z">
-                                        </path>
-                                        <path
-                                            d="m344.782 368.311h-37.937c-4.303 0-7.792-3.489-7.792-7.792 0-4.304 3.489-7.792 7.792-7.792h30.146v-38.083h-40.065c-4.303 0-7.792-3.488-7.792-7.792 0-4.303 3.489-7.792 7.792-7.792h47.856c4.304 0 7.792 3.489 7.792 7.792v53.668c0 4.302-3.488 7.791-7.792 7.791z">
-                                        </path>
-                                        <path
-                                            d="m427.715 369.705h-37.938c-4.303 0-7.792-3.488-7.792-7.792 0-4.303 3.489-7.792 7.792-7.792h30.146v-38.083h-40.062c-4.304 0-7.792-3.489-7.792-7.792 0-4.304 3.488-7.792 7.792-7.792h47.854c4.303 0 7.791 3.488 7.791 7.792v53.667c.001 4.304-3.487 7.792-7.791 7.792z">
-                                        </path>
-                                        <path
-                                            d="m399.837 474.732c-4.303 0-7.791-3.488-7.791-7.792v-60.996h-40.635v60.996c0 4.304-3.488 7.792-7.792 7.792-4.303 0-7.792-3.488-7.792-7.792v-68.788c0-4.303 3.489-7.792 7.792-7.792h56.218c4.304 0 7.792 3.489 7.792 7.792v68.788c0 4.304-3.488 7.792-7.792 7.792z">
-                                        </path>
-                                        <path
-                                            d="m221.891 257.031h-132.85c-4.304 0-7.792-3.488-7.792-7.791 0-4.304 3.488-7.792 7.792-7.792h132.85c4.303 0 7.792 3.488 7.792 7.792 0 4.303-3.489 7.791-7.792 7.791z">
-                                        </path>
-                                    </g>
-                                </svg>
+                            <img src="assets/images/bg/gift1.png">
+
                             </div>
                             <div class="rs-category-content">
                                 <h5 class="rs-category-title">Our Festival Support Includes</h5>
@@ -525,7 +306,6 @@
         </section>
         <!-- category area end -->
 
-        <!-- work step area start -->
         <section class="rs-work-step-area section-space rs-work-step-five">
             <div class="rs-work-step-bg-thumb" data-background="assets/images/bg/work-process-02.png"> </div>
             <div class="container">
@@ -542,56 +322,72 @@
                 <div class="row g-5">
                     <div class="col-xl-7 col-lg-7">
                         <div class="rs-work-step-wrapper process-counts">
-                            <div class="rs-work-step-item">
-                                <div class="rs-work-step-number-wrapper">
-                                    <span class="rs-work-step-number"></span>
-                                    <span class="rs-work-step-text">step</span>
-                                </div>
-                                <h5 class="rs-work-step-title">The Spiritual Heart of Sanatan Culture</h5>
-                                <p class="descrip">Temples are sacred places where devotees gather to pray, celebrate
-                                    festivals, and experience divine blessings. They preserve the spiritual traditions
-                                    of Sanatan culture and guide society with faith and devotion. </p>
-                            </div>
-                            <div class="rs-work-step-item">
-                                <div class="rs-work-step-number-wrapper">
-                                    <span class="rs-work-step-number"></span>
-                                    <span class="rs-work-step-text">step</span>
-                                </div>
-                                <h5 class="rs-work-step-title"> The Need for Temple Support</h5>
-                                <p class="descrip">
-                                    Many temples in villages, riverside regions, and hill areas require support for
-                                    restoration, maintenance, and festival celebrations. Without proper resources, these
-                                    sacred places struggle to serve devotees. </p>
-                            </div>
-                            <div class="rs-work-step-item">
-                                <div class="rs-work-step-number-wrapper">
-                                    <span class="rs-work-step-number"></span>
-                                    <span class="rs-work-step-text">step</span>
-                                </div>
-                                <h5 class="rs-work-step-title">A Sacred Mission for Devotees</h5>
-                                <p class="descrip">
-                                    Sanatan Trust invites every devotee to participate in this sacred mission by
-                                    contributing toward temple development and spiritual activities that protect our
-                                    traditions. </p>
-                            </div>
-                            <div class="rs-work-step-item">
-                                <div class="rs-work-step-number-wrapper">
-                                    <span class="rs-work-step-number"></span>
-                                    <span class="rs-work-step-text">step</span>
-                                </div>
-                                <h5 class="rs-work-step-title">Your Donation is Seva</h5>
-                                <p class="descrip">
 
-                                    Your donation is not just financial support—it is a sacred seva for dharma and a
-                                    meaningful step toward preserving Sanatan culture for future generations. </p>
+                            <!-- Point 1 -->
+                            <div class="rs-work-step-item">
+                                <div class="rs-work-step-number-wrapper">
+                                    <span class="rs-work-step-number"></span>
+                                    <span class="rs-work-step-text">Offer Seva</span>
+                                </div>
+                                <h5 class="rs-work-step-title">Be a Part of a Sacred Mission</h5>
+                                <p class="descrip">
+                                    Every temple is a divine center of faith where devotees seek peace, hope, and
+                                    blessings.
+                                    By supporting temple development, you become a part of a sacred mission that
+                                    protects
+                                    and strengthens Sanatan Dharma for future generations.
+                                </p>
                             </div>
+
+                            <!-- Point 2 -->
+                            <div class="rs-work-step-item">
+                                <div class="rs-work-step-number-wrapper">
+                                    <span class="rs-work-step-number"></span>
+                                    <span class="rs-work-step-text">Support Temples</span>
+                                </div>
+                                <h5 class="rs-work-step-title">Preserve Our Sacred Heritage</h5>
+                                <p class="descrip">
+                                    Many temples in villages, riversides, and pilgrimage routes require support for
+                                    restoration, maintenance, and festivals. Your contribution helps preserve these
+                                    sacred places so devotees can continue their spiritual journey.
+                                </p>
+                            </div>
+
+                            <!-- Point 3 -->
+                            <div class="rs-work-step-item">
+                                <div class="rs-work-step-number-wrapper">
+                                    <span class="rs-work-step-number"></span>
+                                    <span class="rs-work-step-text">Join Devotees</span>
+                                </div>
+                                <h5 class="rs-work-step-title">Offer Your Devotion Through Seva</h5>
+                                <p class="descrip">
+                                    Donating is more than financial support—it is an offering of devotion.
+                                    Your contribution supports temple rituals, spiritual gatherings,
+                                    and community services that unite devotees and strengthen faith.
+                                </p>
+                            </div>
+
+                            <!-- Point 4 -->
+                            <div class="rs-work-step-item">
+                                <div class="rs-work-step-number-wrapper">
+                                    <span class="rs-work-step-number"></span>
+                                    <span class="rs-work-step-text">Receive Blessings</span>
+                                </div>
+                                <h5 class="rs-work-step-title">Create Blessings for Future Generations</h5>
+                                <p class="descrip">
+                                    Every small offering made with devotion becomes a blessing.
+                                    Your support helps protect Sanatan culture, maintain sacred temples,
+                                    and ensure that the light of dharma continues to guide future generations.
+                                </p>
+                            </div>
+
                         </div>
                     </div>
 
                     <style>
                         .donate-card {
                             background: linear-gradient(135deg, #fff, #f9f9f9);
-                            padding: 40px;
+                            padding: 60px;
                             border-radius: 15px;
                             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
                             transition: 0.4s;
@@ -649,7 +445,7 @@
 
                         .donate-content {
                             flex: 1;
-                            margin-left: 15px;
+                            margin-left: 0px;
                         }
 
                         .label {
@@ -659,8 +455,8 @@
                         }
 
                         .value {
-                            font-size: 18px;
-                            font-weight: 700;
+                            font-size: 16px;
+                            font-weight: 500;
                             color: #333;
                         }
 
@@ -668,10 +464,10 @@
                             background: #ff6a00;
                             border: none;
                             color: #fff;
-                            padding: 6px 14px;
-                            border-radius: 6px;
+                            padding: 2px 4px;
+                            border-radius: 4px;
                             cursor: pointer;
-                            transition: 0.3s;
+                            transition: 0.9s;
                         }
 
                         .copy-btn:hover {
@@ -693,35 +489,43 @@
                     <div class="col-xl-5 col-lg-5">
                         <div class="donate-card">
 
-                            <h3 class="donate-title">Support Our Cause</h3>
-                            <!-- <div class="donate-icon">💰</div> -->
-                            <p class="donate-subtitle">Your contribution makes a difference ❤️</p>
+                            <h3 class="donate-title" id="donate-seva">Offer Your Seva to Shri Ram</h3>
+                            <p class="donate-subtitle">
+                                Your valuable donation is not just a contribution it is a sacred offering in the
+                                divine
+                                name of <strong>Shri Ram</strong>. Through your seva, you help protect Sanatan
+                                traditions,
+                                support temples, and spread the blessings of dharma to countless devotees.
+                                Even the smallest offering made with devotion brings immense spiritual merit. ❤️
+                            </p>
 
                             <div class="donate-row">
                                 <div class="donate-icon">📲</div>
                                 <div class="donate-content">
-                                    <span class="label">Copy To UPI ID</span>
+                                    <span class="label">Donate Through UPI</span>
                                     <span class="value">UPI ID :- gpay-11240436436@okbizaxis</span>
                                 </div>
                                 <button class="copy-btn" onclick="copyText('gpay-11240436436@okbizaxis')">Copy</button>
                             </div>
 
                             <div class="donate-row">
-                                <div class="donate-icon">📲</div>
+                                <div class="donate-icon">🙏</div>
                                 <div class="donate-content">
-                                    <span class="label">Copy To UPI ID</span>
-                                    <span class="value">UPI ID :- gpay-11240436436@okbizaxis</span>
+                                    <span class="label">Support Temple Seva</span>
+                                    <span class="value">Offer your contribution with devotion</span>
                                 </div>
-                                <button class="copy-btn" onclick="copyText('gpay-11240436436@okbizaxis')">Copy</button>
+                                <button class="copy-btn"
+                                    onclick="copyText('gpay-11240436436@okbizaxis')">Donate</button>
                             </div>
 
                             <div class="qr-area">
                                 <div class="donate-icon">📷</div>
                                 <div class="donate-content">
-                                    <span class="label">Click On Scan any QR Code</span>
-                                <p>Scan  & Pay</p>
-                                <img src="assets/images/about/scanner.jpg" alt="QR Code">
-                            </div>
+                                    <span class="label">Scan & Offer Your Seva</span>
+                                    <p>Scan the QR Code and donate in the divine name of <strong>Jai Shri Ram</strong>
+                                    </p>
+                                    <img src="assets/images/about/scanner.jpg" alt="QR Code">
+                                </div>
                             </div>
 
                         </div>
@@ -729,367 +533,231 @@
                 </div>
             </div>
         </section>
-        <!-- work step area start -->
+        <style>
+            .donation-alert {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background: linear-gradient(135deg, #ff6a00, #ff9b4d);
+                color: #fff;
+                padding: 18px 22px;
+                border-radius: 10px;
+                font-size: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                transform: translateX(400px);
+                opacity: 0;
+                transition: all 0.5s ease;
+                z-index: 9999;
+            }
 
-        <!-- pricing area start -->
-        <section class="rs-pricing-area section-space rs-pricing-two">
-            <div class="rs-pricing-shape">
-                <img src="assets/images/shape/pricing-shape.png" alt="image">
-            </div>
-            <div class="container">
-                <div class="row  g-5 align-items-center">
-                    <div class="col-xl-7 col-lg-7">
-                        <div class="rs-section-title-wrapper">
-                            <h2 class="rs-section-title">Temple Development Contribution Programs</h2>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-5">
-                        <div class="rs-pricing-tab-wrapper d-flex justify-content-lg-end">
-                            <div class="rs-pricing-tab-inner">
-                                <div class="rs-pricing-tab">
-                                  <button class="monthly-plan-btn active" type="button"> <a href="services.html">Donate Now</a> </button>
-                                </div>
-                                <div class="rs-pricing-tab">
-                                    <button class="yearly-plan-btn" type="button">Donate to Sanatan Dharma</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="rs-pricing-wrapper monthly-pricing">
-                    <div class="row g-5">
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="rs-pricing-item">
-                                <div class="rs-pricing-content">
-                                    <div class="rs-pricing-top">
-                                        <h4 class="rs-pricing-title">Festival Seva Contribution</h4>
-                                        <p class="description">What you will get in this plan !!</p>
-                                    </div>
-                                    <div class="rs-pricing-bottom">
-                                        <h2 class="rs-pricing-amount">30001</h2>
-                                        <span class="rs-pricing-duration"></span>
-                                        <p class="description">Your contribution helps organize sacred festival
-                                            celebrations such as Gudi Padwa and Ram Navami.</p>
-                                    </div>
-                                </div>
-                                <div class="rs-pricing-feature">
-                                    <ul>
-                                        <li>Prepare Documentation</li>
-                                        <li>Brand Consistency</li>
-                                        <li class="close">Quality Control System</li>
-                                        <li class="close">International Business</li>
-                                        <li class="close">Professional Support</li>
-                                    </ul>
-                                </div>
-                                <div class="rs-pricing-btn">
-                                    <a class="rs-btn w-100 has-bg-transparent" href="contact.html">Get Start Now
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                            <path
-                                                d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="rs-pricing-item item-active">
-                                <div class="rs-pricing-bg-thumb" data-background="assets/images/bg/pricing-bg-02.png">
-                                </div>
-                                <span class="rs-pricing-tag">Donate to Seva</span>
-                                <div class="rs-pricing-content">
-                                    <div class="rs-pricing-top">
-                                        <h4 class="rs-pricing-title">Commercial</h4>
-                                        <p class="description">What you will get in this plan !!</p>
-                                    </div>
-                                    <div class="rs-pricing-bottom">
-                                        <h2 class="rs-pricing-amount">$59.00</h2>
-                                        <span class="rs-pricing-duration">Monthly</span>
-                                        <p class="description">This plan includes online consultation options for all
-                                            users</p>
-                                    </div>
-                                </div>
-                                <div class="rs-pricing-feature">
-                                    <ul>
-                                        <li>Prepare Documentation</li>
-                                        <li>Brand Consistency</li>
-                                        <li>Quality Control System</li>
-                                        <li class="close">International Business</li>
-                                        <li class="close">Professional Support</li>
-                                    </ul>
-                                </div>
-                                <div class="rs-pricing-btn">
-                                    <a class="rs-btn w-100 has-bg-transparent" href="contact.html">Get Start Now
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                            <path
-                                                d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="rs-pricing-item">
-                                <div class="rs-pricing-content">
-                                    <div class="rs-pricing-top">
-                                        <h4 class="rs-pricing-title">Enterprise</h4>
-                                        <p class="description">What you will get in this plan !!</p>
-                                    </div>
-                                    <div class="rs-pricing-bottom">
-                                        <h2 class="rs-pricing-amount">$89.00</h2>
-                                        <span class="rs-pricing-duration">Monthly</span>
-                                        <p class="description">This plan includes online consultation options for all
-                                            users</p>
-                                    </div>
-                                </div>
-                                <div class="rs-pricing-feature">
-                                    <ul>
-                                        <li>Prepare Documentation</li>
-                                        <li>Brand Consistency</li>
-                                        <li>Quality Control System</li>
-                                        <li>International Business</li>
-                                        <li class="close">Professional Support</li>
-                                    </ul>
-                                </div>
-                                <div class="rs-pricing-btn">
-                                    <a class="rs-btn w-100 has-bg-transparent" href="contact.html">Get Start Now
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                            <path
-                                                d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            .show-alert {
+                transform: translateX(0);
+                opacity: 1;
+            }
 
-                <div class="rs-pricing-wrapper yearly-pricing">
-                    <div class="row g-5">
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="rs-pricing-item">
-                                <div class="rs-pricing-content">
-                                    <div class="rs-pricing-top">
-                                        <h4 class="rs-pricing-title">Basic Plan</h4>
-                                        <p class="description">What you will get in this plan !!</p>
-                                    </div>
-                                    <div class="rs-pricing-bottom">
-                                        <h2 class="rs-pricing-amount">$49.00</h2>
-                                        <span class="rs-pricing-duration">Monthly</span>
-                                        <p class="description">This plan includes online consultation options for all
-                                            users</p>
-                                    </div>
-                                </div>
-                                <div class="rs-pricing-feature">
-                                    <ul>
-                                        <li>Prepare Documentation</li>
-                                        <li>Brand Consistency</li>
-                                        <li class="close">Quality Control System</li>
-                                        <li class="close">International Business</li>
-                                        <li class="close">Professional Support</li>
-                                    </ul>
-                                </div>
-                                <div class="rs-pricing-btn">
-                                    <a class="rs-btn w-100 has-bg-transparent" href="contact.html">Get Start Now
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                            <path
-                                                d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="rs-pricing-item item-active">
-                                <div class="rs-pricing-bg-thumb" data-background="assets/images/bg/pricing-bg-02.png">
-                                </div>
-                                <span class="rs-pricing-tag">Most Popular</span>
-                                <div class="rs-pricing-content">
-                                    <div class="rs-pricing-top">
-                                        <h4 class="rs-pricing-title">Commercial</h4>
-                                        <p class="description">What you will get in this plan !!</p>
-                                    </div>
-                                    <div class="rs-pricing-bottom">
-                                        <h2 class="rs-pricing-amount">$69.00</h2>
-                                        <span class="rs-pricing-duration">Monthly</span>
-                                        <p class="description">This plan includes online consultation options for all
-                                            users</p>
-                                    </div>
-                                </div>
-                                <div class="rs-pricing-feature">
-                                    <ul>
-                                        <li>Prepare Documentation</li>
-                                        <li>Brand Consistency</li>
-                                        <li>Quality Control System</li>
-                                        <li class="close">International Business</li>
-                                        <li class="close">Professional Support</li>
-                                    </ul>
-                                </div>
-                                <div class="rs-pricing-btn">
-                                    <a class="rs-btn w-100 has-bg-transparent" href="contact.html">Get Start Now
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                            <path
-                                                d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6">
-                            <div class="rs-pricing-item">
-                                <div class="rs-pricing-content">
-                                    <div class="rs-pricing-top">
-                                        <h4 class="rs-pricing-title">Enterprise</h4>
-                                        <p class="description">What you will get in this plan !!</p>
-                                    </div>
-                                    <div class="rs-pricing-bottom">
-                                        <h2 class="rs-pricing-amount">$99.00</h2>
-                                        <span class="rs-pricing-duration">Monthly</span>
-                                        <p class="description">This plan includes online consultation options for all
-                                            users</p>
-                                    </div>
-                                </div>
-                                <div class="rs-pricing-feature">
-                                    <ul>
-                                        <li>Prepare Documentation</li>
-                                        <li>Brand Consistency</li>
-                                        <li>Quality Control System</li>
-                                        <li>International Business</li>
-                                        <li class="close">Professional Support</li>
-                                    </ul>
-                                </div>
-                                <div class="rs-pricing-btn">
-                                    <a class="rs-btn w-100 has-bg-transparent" href="contact.html">Get Start Now
-                                        <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                                            <path
-                                                d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                                            </path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            .upi-link {
+                color: #fff;
+                background: #ff6a00;
+                padding: 4px 8px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin: 0 3px;
+                font-weight: 600;
+            }
 
+            .upi-link:hover {
+                background: #e65c00;
+            }
+        </style>
+
+        <div id="donationAlert" class="donation-alert">
+            ❤️ <strong>Thank You for Your Support! UPI ID is Copied.</strong><br>
+
+            Your contribution helps <b>preserve temples and celebrate sacred festivals like Ram Navami and Gudi
+                Padwa.</b><br>
+
+            Please open
+            <b>
+                <span class="upi-link" onclick="openUPI()">PhonePe (Bank & Self A/c)</span>
+                or
+                <span class="upi-link" onclick="openUPI()">Google Pay (₹ Pay anyone)</span>
+                or
+                <span class="upi-link" onclick="showQR()">📷 Scan QR Code</span>
+            </b>
+            to complete your donation.<br>
+
+            🙏 <b>Your support strengthens Sanatan Dharma.</b>
+        </div>
+
+        <script>
+
+            function copyText(text) {
+                navigator.clipboard.writeText(text);
+
+                var popup = document.getElementById("donationAlert");
+                popup.classList.add("show-alert");
+
+                setTimeout(function () {
+                    popup.classList.remove("show-alert");
+                }, 8000);
+            }
+
+            /* Secure UPI open */
+            function openUPI() {
+
+                var upiLink = "upi://pay?pa=gpay-11240436436@okbizaxis&pn=Sanatan%20Trust&cu=INR";
+
+                window.location.href = upiLink;
+            }
+
+            /* QR Code Option */
+            function showQR() {
+                alert("Please scan the QR code using PhonePe / Google Pay to complete your donation.");
+            }
+
+        </script>
     </main>
     <!-- Body main wrapper end -->
 
-    <div class="rs-footer-bg-thumb-wrapper has-theme-orange">
-        <div class="rs-footer-bg-thumb" data-background="assets/images/logo/rama_bg.jpg"></div>
+    <style>
+        /* Subscribe Title */
 
-        <!-- subscribe area start -->
-        <div class="rs-subscribe-area rs-subscribe-one has-theme-orange">
+        .subscribe-title {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        /* Subscribe Input */
+
+        .rs-subscribe-input {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-logo {
+            max-width: 180px;
+        }
+
+        /* Footer Navigation */
+
+        .footer-nav-wrapper {
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-nav li a {
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .footer-nav li a:hover {
+            color: #ffb347;
+        }
+
+        /* Footer Bottom */
+
+        .copyright-text {
+            color: #fff;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .brand {
+            color: #ffb347;
+            font-weight: 600;
+        }
+    </style>
+    <div class="rs-footer-bg-thumb-wrapper has-theme-orange">
+        <div class="rs-footer-bg-thumb" style="background-image:url('assets/images/logo/rama_bg.jpg');"></div>
+
+        <!-- Subscribe Area -->
+        <div class="rs-subscribe-area rs-subscribe-one">
             <div class="container">
                 <div class="rs-subscribe-wrapper">
-                    <div class="row g-5 align-items-center">
 
+                    <div class="row align-items-center">
+
+                        <!-- Subscribe Content -->
                         <div class="col-xl-9 col-lg-9">
                             <div class="rs-subscribe-content">
-                                <div class="rs-subscribe-text">
-                                    <p>
-                                        Subscribe For Latest Rama News
-                                    </p>
-                                </div>
+
+                                <p class="subscribe-title">
+                                    Subscribe for Latest <strong>Updates</strong>
+                                </p>
+
                                 <div class="rs-subscribe-input">
-                                    <input name="name" type="text" placeholder="Enter Your Email">
-                                    <button type="submit" class="rs-btn has-theme-orange">Send Message</button>
+                                    <input type="email" placeholder="Enter Your Email Address">
+                                    <button class="rs-btn has-theme-orange">Subscribe</button>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3">
+
+                        <!-- Logo -->
+                        <div class="col-xl-3 col-lg-3 text-center">
                             <div class="rs-subscribe-logo">
-                                <img src="assets/images/logo/logo22.png" alt="image" style="width:200px; height:auto;">
+                                <img src="assets/images/logo/logo22.png" alt="Sanatan Trust Logo" class="footer-logo">
                             </div>
                         </div>
+
                     </div>
+
+                    <!-- Footer Navigation -->
+                    <div class="footer-nav-wrapper">
+                        <ul class="footer-nav">
+
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
 
+        <!-- Footer Bottom -->
         <footer>
-            <div class="rs-footer-area rs-footer-two has-theme-orange">
+            <div class="rs-footer-area rs-footer-two">
 
                 <div class="rs-footer-copyright-area rs-copyright-one">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-xl-12">
-                                <div class="rs-footer-copyright has-theme-orange text-center">
-                                    <p class="underline">© <span id="year">2026</span> Jai Shree Ram. Designed by <a
-                                            href="https://dv"></a>CRThems</p>
-                                </div>
+
+                            <div class="col-xl-12 text-center">
+
+                                <p class="copyright-text">
+                                    © <span id="year">2026</span> <strong>Jai Shree Ram</strong>.
+                                    Designed by <span class="brand">CRThemes</span>
+                                </p>
+
                             </div>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </footer>
-        <!-- footer area end -->
-
     </div>
-    <style>
-        .donation-alert {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: linear-gradient(135deg, #ff6a00, #ff9b4d);
-            color: #fff;
-            padding: 18px 22px;
-            border-radius: 10px;
-            font-size: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transform: translateX(400px);
-            opacity: 0;
-            transition: all 0.5s ease;
-            z-index: 9999;
-        }
 
-        .show-alert {
-            transform: translateX(0);
-            opacity: 1;
-        }
-
-        .upi-link{
-color:#fff;
-background:#ff6a00;
-padding:4px 8px;
-border-radius:5px;
-text-decoration:none;
-margin:0 3px;
-font-weight:600;
-}
-
-.upi-link:hover{
-background:#e65c00;
-}
-    </style>
-
-  <div id="donationAlert" class="donation-alert">
-    ❤️ <strong>Thank You for Your Support! UPI ID is Copied.</strong><br>
-
-    Your contribution helps <b>preserve temples and celebrate sacred festivals like Ram Navami and Gudi Padwa.</b><br>
-
-    Please open 
-    <b>
-        <span class="upi-link" onclick="openPhonePe()">PhonePe (Bank & Self A/c)</span>
-        or
-        <span class="upi-link" onclick="openGPay()">Google Pay (₹ Pay anyone)</span>
-    or
-        <span class="upi-link">📷Scan QR Code</span>
-
-    </b>
-    to complete your donation.<br>
-
-    🙏 <b>Your support strengthens Sanatan Dharma.</b>
-</div>
-    <!-- JS here -->
-    <script>
+<script>
         document.addEventListener("DOMContentLoaded", function () {
             var settings = document.querySelector('.template-settings, .rs-theme-settings, .demo-settings');
             if (settings) {
@@ -1097,31 +765,8 @@ background:#e65c00;
             }
         });
     </script>
-    <script>
-        function copyText(text) {
 
-            navigator.clipboard.writeText(text);
-
-            var popup = document.getElementById("donationAlert");
-            popup.classList.add("show-alert");
-
-            setTimeout(function () {
-                popup.classList.remove("show-alert");
-            }, 4000000);
-        }
-    </script>
-
-<script>
-function openPhonePe(){
-    window.location.href = "phonepe://pay?pa=gpay-11240436436@okbizaxis&pn=Sanatan%20Trust&cu=INR";
-}
-
-function openGPay(){
-    window.location.href = "tez://upi/pay?pa=gpay-11240436436@okbizaxis&pn=Sanatan%20Trust&cu=INR";
-}
-</script>
-
-<script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/plugins/waypoints.min.js"></script>
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins/meanmenu.min.js"></script>
