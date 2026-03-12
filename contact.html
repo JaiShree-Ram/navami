@@ -529,166 +529,148 @@
                 </div>
             </div>
 
-             <section class="rs-contact-form-area ">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-8 col-lg-9 col-md-10">
+            <section class="rs-contact-form-area ">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-9 col-md-10">
 
-                        <div class="rs-contact-form">
+                            <div class="rs-contact-form">
 
-                            <h3 class="rs-contact-form-title">Fill To Participate</h3>
+                                <h3 class="rs-contact-form-title">Fill To Participate</h3>
 
-                            <p class="descrip">
-                                Support <strong>Sanatan Dharma</strong> and keep our sacred traditions alive.
-                                Register your participation and we will share future updates with you.
-                            </p>
+                                <p class="descrip">
+                                    Support <strong>Sanatan Dharma</strong> and keep our sacred traditions alive.
+                                    Register your participation and we will share future updates with you.
+                                </p>
 
-                            <form id="participationForm">
+                                <form id="participationForm">
 
-                                <div class="row g-4">
+                                    <div class="row g-4">
 
-                                    <div class="col-md-4 col-12">
-                                        <input id="name" type="text" placeholder="Full Name" required>
+                                        <div class="col-md-4 col-12">
+                                            <input id="name" type="text" placeholder="Full Name" required>
+                                        </div>
+
+                                        <div class="col-md-4 col-12">
+                                            <input id="email" type="email" placeholder="Email Address" required>
+                                        </div>
+
+                                        <div class="col-md-4 col-12">
+                                            <input id="phone" type="text" placeholder="Phone Number" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea id="message"
+                                                placeholder="Write Your Participation Timings"></textarea>
+                                        </div>
+
+                                        <div class="col-12 text-center">
+                                            <button type="submit" class="rs-btn has-theme-orange">
+                                                Submit Participation
+                                            </button>
+                                        </div>
+
                                     </div>
 
-                                    <div class="col-md-4 col-12">
-                                        <input id="email" type="email" placeholder="Email Address" required>
-                                    </div>
+                                </form>
 
-                                    <div class="col-md-4 col-12">
-                                        <input id="phone" type="text" placeholder="Phone Number" required>
-                                    </div>
+                                <!-- Success Message -->
+                                <div id="successMessage" class="success-box"></div>
 
-                                    <div class="col-12">
-                                        <textarea id="message" placeholder="Write Your Participation Timings"></textarea>
-                                    </div>
-
-                                    <div class="col-12 text-center">
-                                        <button type="submit" class="rs-btn has-theme-orange">
-                                            Submit Participation
-                                        </button>
-                                    </div>
-
-                                </div>
-
-                            </form>
-
-                            <!-- Success Message -->
-                            <div id="successMessage" class="success-box"></div>
+                            </div>
 
                         </div>
-
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
-        </section>
 
 
 
 
-        <style>
-            .donation-alert {
-                position: fixed;
-                bottom: 30px;
-                right: 30px;
-                background: linear-gradient(135deg, #ff6a00, #ff9b4d);
-                color: #fff;
-                padding: 18px 22px;
-                border-radius: 10px;
-                font-size: 15px;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-                transform: translateX(400px);
-                opacity: 0;
-                transition: all 0.5s ease;
-                z-index: 9999;
-            }
+            <style>
+        .donation-alert {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(135deg, #ff6a00, #ff9b4d);
+            color: #fff;
+            padding: 18px 22px;
+            border-radius: 10px;
+            font-size: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: translateX(400px);
+            opacity: 0;
+            transition: all 0.5s ease;
+            z-index: 9999;
+        }
 
-            .show-alert {
-                transform: translateX(0);
-                opacity: 1;
-            }
+        .show-alert {
+            transform: translateX(0);
+            opacity: 1;
+        }
 
-            .upi-link {
-                color: #fff;
-                background: #ff6a00;
-                padding: 4px 8px;
-                border-radius: 5px;
-                text-decoration: none;
-                margin: 0 3px;
-                font-weight: 600;
-            }
+        .upi-link {
+            color: #fff;
+            background: #ff6a00;
+            padding: 4px 8px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 3px;
+            font-weight: 600;
+        }
 
-            .upi-link:hover {
-                background: #e65c00;
-            }
-        </style>
+        .upi-link:hover {
+            background: #e65c00;
+        }
+    </style>
 
     <div id="donationAlert" class="donation-alert">
-            ❤️ <strong>Thank You for Supporting Sanatan Dharma!</strong><br>
+        ❤️ <strong>Thank You for Your Support! UPI ID is Copied.</strong><br>
 
-            Your contribution helps <b>restore temples and celebrate sacred festivals like Ram Navami and Gudi
-                Padwa.</b><br><br>
+        Your contribution helps <b>preserve temples and celebrate sacred festivals like Ram Navami and Gudi
+            Padwa.</b><br>
 
-            <button onclick="payDonation()" class="donate-btn">
-                🙏 Donate Securely
-            </button>
+        Please open
+        <b>
+            <span class="upi-link" onclick="openUPI()">PhonePe (Bank & Self A/c)</span>
+            or
+            <span class="upi-link" onclick="openUPI()">Google Pay (₹ Pay anyone)</span>
+            or
+            <span class="upi-link" onclick="showQR()">📷 Scan QR Code</span>
+        </b>
+        to complete your donation.<br>
 
-            <br><br>
-            <b>UPI Direct Option:</b><br>
+        🙏 <b>Your support strengthens Sanatan Dharma.</b>
+    </div>
 
-            <span class="upi-link" onclick="openUPI()">PhonePe / Google Pay</span>
+    <script>
 
-        </div>
+        function copyText(text) {
+            navigator.clipboard.writeText(text);
 
+            var popup = document.getElementById("donationAlert");
+            popup.classList.add("show-alert");
 
-        <script>
+            setTimeout(function () {
+                popup.classList.remove("show-alert");
+            }, 8000);
+        }
 
-            function payDonation() {
+        /* Secure UPI open */
+        function openUPI() {
 
-                var options = {
-                    "key": "rzp_test_SQLmMZLrFSettT",
-                    "amount": "50000",
-                    "currency": "INR",
-                    "name": "Sanatan Trust",
-                    "description": "Temple Development Donation",
-                    "image": "assets/images/logo.png",
+            var upiLink = "upi://pay?pa=gpay-11240436436@okbizaxis&pn=Sanatan%20Trust&cu=INR";
 
-                    "handler": function (response) {
+            window.location.href = upiLink;
+        }
 
-                        alert("🙏 Thank you! Payment Successful\nPayment ID: " + response.razorpay_payment_id);
+        /* QR Code Option */
+        function showQR() {
+            alert("Please scan the QR code using PhonePe / Google Pay to complete your donation.");
+        }
 
-                    },
-
-                    "prefill": {
-                        "name": "",
-                        "email": "",
-                        "contact": ""
-                    },
-
-                    "theme": {
-                        "color": "#ff7b00"
-                    }
-
-                };
-
-                var rzp = new Razorpay(options);
-                rzp.open();
-
-            }
-
-
-            /* UPI fallback option */
-
-            function openUPI() {
-
-                var upiLink = "upi://pay?pa=gpay-11240436436@okbizaxis&pn=Sanatan%20Trust&cu=INR";
-
-                window.location.href = upiLink;
-
-            }
-
-        </script>
+    </script>
 
         <style>
             .form-section {
