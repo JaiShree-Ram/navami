@@ -213,6 +213,31 @@
 
     </script>
     <main>
+        <style>
+            @media (max-width: 768px) {
+
+                .rs-breadcrumb-area {
+                    min-height: 350px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .rs-breadcrumb-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .rs-breadcrumb-bg img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+        </style>
 
         <!-- breadcrumb area start -->
         <section class="rs-breadcrumb-area rs-breadcrumb-one p-relative">
@@ -221,18 +246,19 @@
                 <div class="row">
                     <div class="col-xxl-6 col-xl-8 col-lg-8">
                         <div class="rs-breadcrumb-content-wrapper">
-                            <div class="rs-breadcrumb-title-wrapper">
-                                <h1 class="rs-breadcrumb-title">Our Sacred Journey</h1>
-                            </div>
+
                             <div class="rs-breadcrumb-menu">
-                                <nav>
-                                    <ul>
-                                        <li><span>Sanatan Trust works to protect the heritage of Sanatan Dharma through
-                                                temple restoration and sacred festivals.
-                                                We inspire devotion and preserve traditions for future generations. 🙏
-                                            </span></li>
-                                    </ul>
-                                </nav>
+
+
+                                <h1 class="rs-banner-title" style="color: whitesmoke;">
+                                    Our Sacred Journey
+                                </h1>
+                                <div class="rs-banner-descrip">
+                                    <p style="color: whitesmoke;">Sanatan Trust works to protect the heritage of Sanatan
+                                        Dharma through
+                                        temple restoration and sacred festivals.
+                                        We inspire devotion and preserve traditions for future generations. 🙏</p>
+                                </div>
 
                             </div>
 
@@ -444,7 +470,7 @@
         </section>
         <!-- history area start -->
 
-         <section class="rs-work-step-area section-space rs-work-step-five">
+        <section class="rs-work-step-area section-space rs-work-step-five">
             <div class="rs-work-step-bg-thumb" data-background="assets/images/bg/work-process-02.png"> </div>
             <div class="container">
                 <div class="row g-5">
@@ -671,89 +697,110 @@
                 </div>
             </div>
         </section>
-         <style>
-        .donation-alert {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: linear-gradient(135deg, #ff6a00, #ff9b4d);
-            color: #fff;
-            padding: 18px 22px;
-            border-radius: 10px;
-            font-size: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transform: translateX(400px);
-            opacity: 0;
-            transition: all 0.5s ease;
-            z-index: 9999;
-        }
+        <style>
+            .donation-alert {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background: linear-gradient(135deg, #ff6a00, #ff9b4d);
+                color: #fff;
+                padding: 18px 22px;
+                border-radius: 10px;
+                font-size: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                transform: translateX(400px);
+                opacity: 0;
+                transition: all 0.5s ease;
+                z-index: 9999;
+            }
 
-        .show-alert {
-            transform: translateX(0);
-            opacity: 1;
-        }
+            .show-alert {
+                transform: translateX(0);
+                opacity: 1;
+            }
 
-        .upi-link {
-            color: #fff;
-            background: #ff6a00;
-            padding: 4px 8px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 0 3px;
-            font-weight: 600;
-        }
+            .upi-link {
+                color: #fff;
+                background: #ff6a00;
+                padding: 4px 8px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin: 0 3px;
+                font-weight: 600;
+            }
 
-        .upi-link:hover {
-            background: #e65c00;
-        }
-    </style>
+            .upi-link:hover {
+                background: #e65c00;
+            }
+        </style>
 
-    <div id="donationAlert" class="donation-alert">
-        ❤️ <strong>Thank You for Your Support! UPI ID is Copied.</strong><br>
 
-        Your contribution helps <b>preserve temples and celebrate sacred festivals like Ram Navami and Gudi
-            Padwa.</b><br>
 
-        Please open
-        <b>
-            <span class="upi-link" onclick="openUPI()">PhonePe (Bank & Self A/c)</span>
-            or
-            <span class="upi-link" onclick="openUPI()">Google Pay (₹ Pay anyone)</span>
-            or
-            <span class="upi-link" onclick="showQR()">📷 Scan QR Code</span>
-        </b>
-        to complete your donation.<br>
+        <div id="donationAlert" class="donation-alert">
+            ❤️ <strong>Thank You for Supporting Sanatan Dharma!</strong><br>
 
-        🙏 <b>Your support strengthens Sanatan Dharma.</b>
-    </div>
+            Your contribution helps <b>restore temples and celebrate sacred festivals like Ram Navami and Gudi
+                Padwa.</b><br><br>
 
-    <script>
+            <button onclick="payDonation()" class="donate-btn">
+                🙏 Donate Securely
+            </button>
 
-        function copyText(text) {
-            navigator.clipboard.writeText(text);
+            <br><br>
+            <b>UPI Direct Option:</b><br>
 
-            var popup = document.getElementById("donationAlert");
-            popup.classList.add("show-alert");
+            <span class="upi-link" onclick="openUPI()">PhonePe / Google Pay</span>
 
-            setTimeout(function () {
-                popup.classList.remove("show-alert");
-            }, 8000);
-        }
+        </div>
 
-        /* Secure UPI open */
-        function openUPI() {
 
-            var upiLink = "upi://pay?pa=gpay-11240436436@okbizaxis&pn=Sanatan%20Trust&cu=INR";
+        <script>
 
-            window.location.href = upiLink;
-        }
+            function payDonation() {
 
-        /* QR Code Option */
-        function showQR() {
-            alert("Please scan the QR code using PhonePe / Google Pay to complete your donation.");
-        }
+                var options = {
+                    "key": "rzp_test_SQLmMZLrFSettT",
+                    "amount": "50000",
+                    "currency": "INR",
+                    "name": "Sanatan Trust",
+                    "description": "Temple Development Donation",
+                    "image": "assets/images/logo.png",
 
-    </script>
+                    "handler": function (response) {
+
+                        alert("🙏 Thank you! Payment Successful\nPayment ID: " + response.razorpay_payment_id);
+
+                    },
+
+                    "prefill": {
+                        "name": "",
+                        "email": "",
+                        "contact": ""
+                    },
+
+                    "theme": {
+                        "color": "#ff7b00"
+                    }
+
+                };
+
+                var rzp = new Razorpay(options);
+                rzp.open();
+
+            }
+
+
+            /* UPI fallback option */
+
+            function openUPI() {
+
+                var upiLink = "upi://pay?pa=gpay-11240436436@okbizaxis&pn=Sanatan%20Trust&cu=INR";
+
+                window.location.href = upiLink;
+
+            }
+
+        </script>
 
     </main>
     <!-- Body main wrapper end -->
@@ -903,6 +950,7 @@
             }
         });
     </script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
     <script src="assets/js/plugins/waypoints.min.js"></script>
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
