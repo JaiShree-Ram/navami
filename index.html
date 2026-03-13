@@ -1125,34 +1125,7 @@
             </div>
         </section>
 
-
-
         <!-- ALERT MESSAGE -->
-
-        <div id="donationAlert" class="donation-alert">
-
-            <strong>Thank You for Supporting Dharma! UPI ID is Copied.</strong><br><br>
-
-            🙏 May Shri Ram and Shri Krishna bless you and your family
-            with peace, prosperity, and divine protection.<br><br>
-
-            Please complete your offering using
-
-            <b>
-                <span class="upi-link" onclick="openUPI()">PhonePe (Bank & Self A/c)</span>
-                or
-                <span class="upi-link" onclick="openUPI()">Google Pay (₹ Pay anyone)</span>
-                or
-                <span class="upi-link" onclick="showQR()">📷 Scan QR Code</span>
-            </b>
-
-            <br><br>
-            <b>🙏 Hare Krishna ❤️</b>
-
-        </div>
-
-
-
         <style>
             .donation-alert {
                 position: fixed;
@@ -1189,9 +1162,27 @@
                 background: #e65c00;
             }
         </style>
+        <div id="donationAlert" class="donation-alert">
 
+            <strong>Thank You for Supporting Dharma! UPI ID is Copied.</strong><br><br>
 
+            🙏 May Shri Ram and Shri Krishna bless you and your family
+            with peace, prosperity, and divine protection.<br><br>
 
+            Please complete your offering using
+
+            <b>
+                <span class="upi-link" onclick="openUPI()">PhonePe (Bank & Self A/c)</span>
+                or
+                <span class="upi-link" onclick="openUPI()">Google Pay (₹ Pay anyone)</span>
+                or
+                <span class="upi-link" onclick="showQR()">📷 Scan QR Code</span>
+            </b>
+
+            <br><br>
+            <b>🙏 Hare Krishna ❤️</b>
+
+        </div>
         <script>
 
             function copyUPI() {
@@ -1206,7 +1197,7 @@
 
                 setTimeout(function () {
                     alertBox.classList.remove("show-alert");
-                }, 5000);
+                }, 50000);
 
             }
 
@@ -1223,7 +1214,39 @@
             }
 
         </script>
+<script>
+        function payDonation(amount) {
 
+            var options = {
+                "key": "rzp_test_SQLmMZLrFSettT", 
+                "amount": amount * 100,
+                "currency": "INR",
+                "name": "RamaKrishna Seva",
+                "description": "Seva Donation",
+                "handler": function (response) {
+                    alert("🙏 Jai Shri Ram! Donation Successful");
+                },
+                "prefill": {
+                    "name": "",
+                    "email": "",
+                    "contact": ""
+                },
+                "theme": {
+                    "color": "#ff6b00"
+                }
+            };
+
+            var rzp1 = new Razorpay(options);
+
+            rzp1.on('payment.failed', function (response) {
+                alert("Payment Failed ❌");
+                alert(response.error.description);
+            });
+
+            rzp1.open();
+
+        }
+    </script>
     </main>
 
     <style>
@@ -1288,35 +1311,11 @@
             font-weight: 600;
         }
     </style>
+ 
 
+    <!-- End the Razorpayment -->
 
-    <script>
-        function payDonation(amount) {
-
-            var options = {
-                "key": "rzp_test_SQLmMZLrFSettT",
-                "amount": amount * 100,
-                "currency": "INR",
-                "name": "Sanatan Trust",
-                "description": "Seva Donation",
-                "handler": function (response) {
-                    alert("🙏 Jai Shri Ram! Donation Successful");
-                },
-                "prefill": {
-                    "name": "",
-                    "email": "",
-                    "contact": ""
-                },
-                "theme": {
-                    "color": "#ff6b00"
-                }
-            };
-
-            var rzp = new Razorpay(options);
-            rzp.open();
-
-        }
-    </script>
+   
 
     <div class="rs-footer-bg-thumb-wrapper has-theme-orange">
         <div class="rs-footer-bg-thumb" style="background-image:url('assets/images/logo/rama_bg.jpg');"></div>
